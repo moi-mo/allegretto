@@ -12,7 +12,7 @@ class Bangumi :
 # load
 # 格式为name episode time，中间用空格分开，不同的项目之间是\n
 def load():
-    f = open('bangumi_recorder/data.data','r')
+    f = open('data.data','r')
     s = f.read()
     f.close()
 
@@ -39,7 +39,7 @@ def new(bangumi):
     if is_in:
         print('错误！这部番已经在列表里了哦？')
     else:
-        f = open('bangumi_recorder/data.data','a')
+        f = open('data.data','a')
         f.write(bangumi.name+' '+bangumi.episode+' '+bangumi.time+'\n')
         f.close()
         print('番剧',bangumi.name,'新建成功！')
@@ -62,7 +62,7 @@ def mark(name,change_type,new_val):
         s = ''
         for i in l:
             s += i.name+' '+i.episode+' '+i.time+'\n'
-        f = open('bangumi_recorder/data.data','w')
+        f = open('data.data','w')
         f.write(s)
         f.close()
 
