@@ -69,9 +69,9 @@ def mark(name,change_type,new_val):
 # check_all
 def check_all():
     l = load()
-    print('name\tepisode\ttime')
+    print('name\t\tepisode\t\ttime')
     for i in l:
-        print(i.name,'\t',i.episode,'\t',i.time,'\n')
+        print(i.name,'\t\t',i.episode,'\t\t',i.time,'\n')
 ###############################################
 
 # check
@@ -80,14 +80,26 @@ def check(name):
     is_in = False
     for i in l:
         if name == i.name:
-            print(i.name,'\t',i.episode,'\t',i.time)
+            print('name\t\tepisode\t\ttime')
+            print(i.name,'\t\t',i.episode,'\t\t',i.time)
             is_in = True
     if not is_in:
         print('该番剧还不在列表中，打对了吗？')
-        
+ ##################################################       
 
 # help
 # 写完main了写
+help_word = '''
+new [name]
+new [name] [episode] [time]
+mark [name] [change_type] [new_val]
+br [name] [eprisode] [time]
+check [name]
+check all
+version
+exit
+还有问题去看README.md（（（
+'''
 ##################################################
 
 # version
@@ -100,7 +112,6 @@ def version():
 # 2 改变番剧中的变量    mark
 # 3 查看已有内容    check_all
 #############以下是程序运行的main：
-
 print('Hi~喜欢今天看的番剧吗？\n开始记录吧w，如有疑问请查阅README.md或者输入help')
 
 def get_order():
@@ -153,5 +164,17 @@ while order != 'exit':
         version()
         get_order()
 
+    elif order == 'help':
+        print(help_word)
+        get_order()
+
+    else:
+        print('z?这么简单的命令都打错了？错误！')
+        get_order()
+
+print('bye!')
+input()
+import sys
+sys.exit()
 
 
