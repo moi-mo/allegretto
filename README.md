@@ -1,10 +1,10 @@
-# Bangumi Recorder
+# allegretto
 
 可以用来记录本地下载的番剧追番进度，这样就不用打开浏览器去Bangumi站记录了（
 
 当然如果没多少番剧的话其实没必要用~~因为这玩意儿是写着练的~~
 
-目前的版本号是12<sub>~~（当然不是开发了12版）~~</sub>，后续应该会按照太鼓达人框体的版本号更新一些feature~~就是无聊而已~~
+目前的版本号是14<sub>~~（当然不是开发了12版）~~</sub>，后续应该会按照太鼓达人框体的版本号更新一些feature~~就是无聊而已~~
 
 初步确定一个番剧class会有三个类变量：`name`、`episode`、`time`。均为str。
 
@@ -28,11 +28,11 @@ or
 
 
 
-#### `BangumiRecorder`:同时更改一部番剧的episode与time。
+#### `allegretto`:同时更改一部番剧的episode与time。
 
-**（其中BangumiRecorder可以缩写为br）**
+**（其中allegretto可以缩写为al）**
 
-> br [name] [eprisode] [time]
+> al [name] [eprisode] [time]
 
 
 
@@ -41,6 +41,12 @@ or
 > check [name]
 
 > check all
+
+
+
+#### ```delete```:删除已有的番剧条目。
+
+> delete [name]
 
 
 
@@ -66,16 +72,8 @@ or
 - 标记是否看完
 - 把~~没有灵魂的·~~“Hi~”改为早上/下午/晚上按时间问候。
 
-- 打包成exe
-- data.data文件自动创建
 
 
-
-## 仍未修复的bug：
-
-**锟斤拷锟斤拷锟斤拷锟斤拷**
-
-——请尽量使用英文字母（
 
 
 

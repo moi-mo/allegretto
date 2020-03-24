@@ -1,0 +1,6 @@
+2020-03-04：version 14 更新。
+	- 重命名为'allegretto'
+	- 全部重写了一遍
+	- 增加了delete语句
+	- 修复若干bug
+	- 增加了exe的release
