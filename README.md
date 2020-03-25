@@ -40,7 +40,10 @@ or
 
 > check [name]
 
-> check all
+
+#### `check-all`:查看已有的全部番剧信息。
+
+> check-all
 
 
 
